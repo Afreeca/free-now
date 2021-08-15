@@ -6,6 +6,7 @@ import { Container } from './style'
 import { VehicleInfo } from 'components';
 
 const googleApiKey = process.env.REACT_APP_GOOGLE_APIKEY;
+const googleMapUrl = process.env.REACT_APP_GOOGLE_MAP_URL;
 
 const Map = ({type, items}) => {
 
@@ -50,7 +51,7 @@ const Map = ({type, items}) => {
     return (
         <Container>
             <WrappedMap 
-                googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${googleApiKey}`}
+                googleMapURL={`${googleMapUrl}&key=${googleApiKey}`}
                 loadingElement={<div style={{ height: `100%` }} />}
                 containerElement={<div style={{ height: `300px` }} />}
                 mapElement={<div style={{ height: `100%` }} />}
