@@ -1,4 +1,4 @@
-import { Switch, BrowserRouter as Router, Route, Redirect } from "react-router-dom";
+import { Switch, Router, Route, Redirect } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from 'globalStyle';
@@ -10,7 +10,6 @@ import { company } from "utils/constants";
 const history = createBrowserHistory();
 
 function Routes() {
-
   return (
     <Router history={history}>
           <ThemeProvider theme={lightTheme}>

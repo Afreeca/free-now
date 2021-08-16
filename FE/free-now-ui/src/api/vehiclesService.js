@@ -18,7 +18,7 @@ export async function fetchFreeVehicles() {
    
 }
 
-export async function fetchSharedVehicles() {
+export async function fetchShareVehicles() {
     const response = await fetch(`${freeNowServer}/${company.shareNow}/vehicles`);
     try {
         if(response.ok){

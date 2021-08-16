@@ -21,7 +21,7 @@ const renderFreeNowTable = (items) => {
     )
 }
 
-const renderSharedNowTable = (items) => {
+const renderShareNowTable = (items) => {
     return (
         <RsTable data={items} width={1000} height={400} align="center">
             <Column width={150} sortable fixed align='left'>
@@ -59,7 +59,7 @@ const Table = ({type, items}) =>{
         ?
             renderFreeNowTable(items)
         : 
-            renderSharedNowTable(items)
+            renderShareNowTable(items)
     )
 }
 

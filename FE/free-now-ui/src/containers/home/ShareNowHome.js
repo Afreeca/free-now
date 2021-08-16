@@ -1,4 +1,4 @@
-import { fetchSharedVehicles } from 'api';
+import { fetchShareVehicles } from 'api';
 import { VehicleList } from 'components'
 import { Banner } from 'components';
 import React, { useState, useEffect } from 'react';
@@ -11,7 +11,7 @@ const ShareNowHome = () => {
     const [loading, setLoading] = useState(true);
  
     useEffect(() => {
-        fetchSharedVehicles()
+        fetchShareVehicles()
         .then((result) => {
             setVehicles(result.placemarks);
             setLoading(false)
